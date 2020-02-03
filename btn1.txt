@@ -1,0 +1,33 @@
+export default App;
+import React from "react";
+import "./App.css";
+import settings from "./settings.png";
+import cart from "./cart.jpg";
+import logo1 from "./logo1.png";
+import fav from "./fav.jpg";
+import notes from "./notes.jpg";
+import images from "./images.png";
+function App() {
+  return (
+    <div className="image-gallery-slide img">
+      <img src={logo1} alt="hiiiiii" />
+      <a href="www.google.com">
+        <img src={cart} alt="hiiiiii" />
+      </a>
+      <a href="">
+        <img src={settings} alt="hiiiiii" />
+      </a>
+      <a href="">
+        <img src={notes} alt="hiiiiii" />
+      </a>
+      <a href="">
+        <img src={fav} alt="hiiiiii" />
+      </a>
+      <a href="">
+        <img src={images} alt="hiiiiii" />
+      </a>
+    </div>
+  );
+}
+
+export default App;

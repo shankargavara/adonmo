@@ -1,0 +1,11 @@
+import React from "react";
+import Bt from "./Bt.jsx";
+
+function App() {
+  return (
+    <div className="App">
+      <Bt />
+    </div>
+  );
+}
+export default App;

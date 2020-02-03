@@ -1,0 +1,39 @@
+<html>
+  <head>
+    <title>
+      React app
+    </title>
+  </head>
+  <body>
+    <noscript>you need to enable js to run this app</noscript>
+    <div id="root"></div>
+  </body>
+</html>
+
+import React, { component, Component } from "react";
+import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
+import { Layout, Navigation, Drawer, Content } from "react-mdl";
+import Main from "./components/main";
+
+class App extends Component {
+  render() {
+    return (
+      <div className="App-header">
+        <Layout>
+          <Header className="App-header" title="Title" scroll>
+            <Navigation>
+              <Link to="/transform">transfrom</Link>
+              <Link to="/transform1">transfrom1</Link>
+            </Navigation>
+          </Header>
+          <Drawer className="App-header" title="Title" scroll>
+            <Navigation>
+              <Link to="/transform">transfrom</Link>
+              <Link to="/transform1">transfrom1</Link>
+            </Navigation>
+          </Drawer>
+        </Layout>
+      </div>
+    );
+  }
+}
